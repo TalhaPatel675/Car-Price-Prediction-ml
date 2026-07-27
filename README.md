@@ -1,41 +1,20 @@
 # 🚗 Car Price Prediction using Machine Learning
 
-An end-to-end Machine Learning project that predicts the selling price of a car using **Linear Regression**. This project demonstrates data preprocessing, feature engineering, model training, evaluation, and deployment with **Streamlit**.
+A Machine Learning web application that predicts the market price of a car based on its specifications.
+
+Built using **Python**, **Scikit-Learn**, and **Streamlit**.
 
 ---
 
-## 📌 Project Overview
+## 📌 Features
 
-The goal of this project is to predict the selling price of a car based on its features such as engine size, horsepower, fuel type, drive wheels, and other specifications.
-
-This project follows a complete Machine Learning workflow:
-
-- Data Collection
-- Data Preprocessing
-- Feature Encoding
-- Train-Test Split
-- Model Training
-- Model Evaluation
-- Model Deployment
-
----
-
-## 📂 Dataset
-
-**Dataset:** Car Price Assignment Dataset
-
-The dataset contains various car specifications including:
-
-- Car Name
-- Fuel Type
-- Aspiration
-- Car Body
-- Drive Wheels
-- Engine Size
-- Horsepower
-- Peak RPM
-- Highway MPG
-- Price
+- Predicts car prices instantly
+- Interactive Streamlit web interface
+- Machine Learning pipeline using Linear Regression
+- Automatic preprocessing with OneHotEncoder
+- Supports categorical and numerical features
+- Actual vs Predicted visualization
+- Residual analysis plot
 
 ---
 
@@ -51,53 +30,79 @@ The dataset contains various car specifications including:
 
 ---
 
-## 🤖 Machine Learning Model
+## 📂 Dataset
 
-Model Used:
+Dataset contains **205 cars** with specifications such as:
 
-**Linear Regression**
+- Fuel Type
+- Engine Size
+- Horsepower
+- Car Body
+- Wheelbase
+- Fuel System
+- Compression Ratio
+- Mileage
+- Drive Wheel
+- and many more...
 
-Evaluation Metrics:
+Target Variable:
 
-- Mean Absolute Error (MAE)
-- Root Mean Squared Error (RMSE)
-- R² Score
+- **Price**
 
 ---
 
-## 📊 Project Structure
+## 📈 Model Performance
 
-```text
-car-price-prediction-ml/
-│
-├── app.py
-├── train.py
-├── requirements.txt
-├── README.md
-├── LICENSE
-│
-├── data/
-├── images/
-└── models/
+| Metric | Score |
+|---------|--------|
+| Model | Linear Regression |
+| MAE | 2244.60 |
+| RMSE | 3172.90 |
+| R² Score | 0.8725 |
+
+---
+
+## 📊 Visualizations
+
+### Actual vs Predicted
+
+![Actual vs Predicted](images/actual_vs_predicted.png)
+
+---
+
+### Residual Plot
+
+![Residual Plot](images/residual_plot.png)
+
+---
+
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/TalhaPatel675/Car-Price-Prediction-ml.git
 ```
 
----
+Go to project folder
 
-## 🚀 How to Run
+```bash
+cd Car-Price-Prediction-ml
+```
 
-### Install Dependencies
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Train the Model
+Train the model
 
 ```bash
 python train.py
 ```
 
-### Run the Streamlit App
+Run the application
 
 ```bash
 streamlit run app.py
@@ -105,26 +110,51 @@ streamlit run app.py
 
 ---
 
-## 📈 Output
+## 📸 Application
 
-The project automatically:
+The application allows users to:
 
-- Trains the model
-- Evaluates model performance
-- Saves the trained model
-- Generates prediction graphs
+- Select car specifications
+- Predict the estimated price
+- View model performance
+- Analyze prediction graphs
 
 ---
 
-## 🎯 Future Improvements
+## 📁 Project Structure
 
-- Random Forest Regressor
-- XGBoost
-- Hyperparameter Tuning
-- Better Streamlit User Interface
+```
+Car-Price-Prediction-ml
+│
+├── app.py
+├── train.py
+├── requirements.txt
+│
+├── data
+│   └── CarPrice_Assignment.csv
+│
+├── models
+│   └── car_price_pipeline.pkl
+│
+├── images
+│   ├── actual_vs_predicted.png
+│   └── residual_plot.png
+│
+└── README.md
+```
 
 ---
 
 ## 👨‍💻 Author
 
-Talha
+**Talha Patel**
+
+GitHub:
+
+https://github.com/TalhaPatel675
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub!
