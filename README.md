@@ -11,7 +11,7 @@ https://car-price-prediction-ml-c8gdrbsefzirauv83mbwhf.streamlit.app/
 
 ## 📱 Application Preview
 
-![Application](imagesapp.png)
+![Application](images/imagesapp.png)
 
 ## 📌 Features
 
