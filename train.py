@@ -85,6 +85,8 @@ print(f"R² Score     : {r2:.4f}")
 # Save Model
 # ---------------------------------
 joblib.dump(model, "models/linear_regression.pkl")
+# Save feature names
+joblib.dump(list(X.columns), "models/feature_names.pkl")
 
 print("\n✅ Model saved successfully!")
 
