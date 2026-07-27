@@ -115,17 +115,6 @@ The project automatically:
 - Generates prediction graphs
 
 ---
-## 📷 Model Visualizations
-
-### Actual vs Predicted
-
-![Actual vs Predicted](images/actual_vs_predicted.png)
-
----
-
-### Residual Plot
-
-![Residual Plot](images/residual_plot.png)
 
 ## 🎯 Future Improvements
 
