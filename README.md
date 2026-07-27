@@ -5,6 +5,13 @@ A Machine Learning web application that predicts the market price of a car based
 Built using **Python**, **Scikit-Learn**, and **Streamlit**.
 
 ---
+## 🚀 Live Demo
+
+https://car-price-prediction-ml-c8gdrbsefzirauv83mbwhf.streamlit.app/
+
+## 📱 Application Preview
+
+![Application](images/app.png)
 
 ## 📌 Features
 
